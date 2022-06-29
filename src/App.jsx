@@ -6,7 +6,7 @@ function App() {
 
   // para añadir campos dinámicos a un objeto, hacemos uso de []
   // dentro de los corchetes ponemos el nombre del campo dinámido
-  
+
   let campo = "id"
   const obj = {
     nombre: "Jorge",
@@ -17,7 +17,9 @@ function App() {
   console.log(obj)
 
 
-
+  // destructuring
+  const { nombre:neim, altura=2 } = obj;
+  console.log(`altura: ${altura}`)
 
 
 
