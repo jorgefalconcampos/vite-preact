@@ -7,6 +7,7 @@ import ComponenteClase from "./ComponenteClase"
 import Titulo from "./Titulo"
 // estilos
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ItemListContenedor } from "./components/Contenedor/ItemListContenedor"
 
 function form(){
   
@@ -20,7 +21,10 @@ function App() {
   // }
 
   return (
+    <div>
       <NavBar/>
+      <ItemListContenedor saludo={"Hola, saludos!"}/>
+    </div>
     // // <div className="App" style={ objStyle }>
     //   <ComponenteClase/>
     //   <Titulo/>
