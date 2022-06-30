@@ -1,46 +1,31 @@
+// librerías/dependencias
 import "./App.css"
+// componentes
 import NavBar from "./components/NavBar/NavBar"
 import Contenedor from "./components/Contenedor/Contenedor"
+import ComponenteClase from "./ComponenteClase"
+import Titulo from "./Titulo"
+// estilos
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+function form(){
+  
+}
 
 function App() {
-
-  // para añadir campos dinámicos a un objeto, hacemos uso de []
-  // dentro de los corchetes ponemos el nombre del campo dinámido
-
-  let campo = "id"
-  const obj = {
-    nombre: "Jorge",
-    apellido: "Falcón",
-    [campo]: "1234"
-  }
-
-  console.log(obj)
-
-
-  // destructuring
-  const { nombre:neim, altura=2 } = obj;
-  console.log(`altura: ${altura}`)
-
-
-
-
-
-
-
-  const objStyle = {
-    color: "white",
-    backgroundColor: "blue",
-    fontSize: 30
-  }
+  // const objStyle = {
+  //   color: "white",
+  //   backgroundColor: "blue",
+  //   fontSize: 30
+  // }
 
   return (
-    <div className="App" style={ objStyle }>
       <NavBar/>
-
-      <Contenedor saludos="saludo"/>
-
-      
-    </div>
+    // // <div className="App" style={ objStyle }>
+    //   <ComponenteClase/>
+    //   <Titulo/>
+    //   <Contenedor saludos="saludo"/>
+    // </div>
   
   )
 }
