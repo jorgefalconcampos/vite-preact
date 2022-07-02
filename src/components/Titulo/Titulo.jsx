@@ -1,11 +1,14 @@
+const Titulo = ( obj ) => {
 
-const Titulo = ( { titulo, subTitulo } ) => {
-    return ( 
-        <div>
-            <h1>{ titulo }</h1> 
-            <h2>{ subTitulo }</h2>
-        </div>
+    console.log(obj);
+    return (
+        <>
+            
+            <h1>{ obj.titulo }</h1>
+            <h2>{ obj.subTitulo }</h2>
+            { obj.children }
+        </>
     )
-}
+  }
 
-export default Titulo 
+  export default Titulo
