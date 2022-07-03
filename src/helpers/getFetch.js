@@ -11,7 +11,9 @@ let productos = [
 export const getFetch = new Promise((resolve, rejected) => {
     let condition = true;
     if(condition) {
-        resolve("200 OK");
+        setTimeout(() => {
+            resolve(productos)
+        }, 2000)
     }
     else {
         rejected("400 Not found")
